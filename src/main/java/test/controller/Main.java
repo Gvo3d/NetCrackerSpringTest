@@ -22,4 +22,12 @@ public class Main {
         mav.addObject("now",aservice.getAll());
         return mav;
     }
+
+    @RequestMapping("/test")
+    public ModelAndView test(){
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("test");
+        mav.addObject("now",aservice.getAll());
+        return mav;
+    }
 }

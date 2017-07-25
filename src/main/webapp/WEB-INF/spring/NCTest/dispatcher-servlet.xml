@@ -27,6 +27,13 @@
         </beans:property>
     </beans:bean>
 
+    <interceptors>
+        <interceptor>
+            <mapping path="/*"/>
+            <beans:bean class="test.controller.AuthCheckInterceptor"/>
+        </interceptor>
+    </interceptors>
+
     <!-- AJAX ObjectToJSON handlers -->
     <beans:bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <beans:property name="messageConverters">

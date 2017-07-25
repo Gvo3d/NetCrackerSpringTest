@@ -26,7 +26,7 @@
         mod/mod<br/>
         list/list<br/>
 
-        <a href="/NetCrackerSpringTest/test">TEST LINK</a>
+        <a href="/NetCrackerSpringTest">TEST LINK</a>
 
         <form action="login" method="post">
         <input type="text" name="login" value="login" onfocus="this.value=''"><br/>
